@@ -48,7 +48,7 @@
 
 
   <div class="container-fluid" style="position: relative;">
-      <div class="sidenav nav" style="position: absolute; display: block;">
+      <div class="sidenav nav" style="position: fixed; display: block; margin-top: 200px;">
           
           <a class="active" data-toggle="tab" href="#android" aria-controls="nav-apps" aria-selected="true"><img src="img/android_logo.png" width="23px"> Android</a>
           <a data-toggle="tab" href="#flutter"><img src="img/flutter_logo.png" width="23px"> Flutter </a>
@@ -62,12 +62,40 @@
 
       </div>
 
-      <div style="overflow-y: auto; overflow-x:hidden; max-height: 600px; margin-left: 170px;">
+      <div style="overflow-y: auto; overflow-x:hidden; height: 100%; margin-left: 170px;">
         <div class="tab-content" style="padding: 10px;">
 
           <!----- Android START ----->
           <div class="tab-pane show active w3-animate-zoom" id="android">
             <div class="card-deck">
+                    
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="https://miro.medium.com/max/1018/1*eUFJ5BNpw3xSZxK3BhVHxw.jpeg" alt="E-Commerce">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">E-Commerce</h5>
+                            <p class="card-text">Online store for Mobiles, Fashion (clothes/shoes), Electronics, Home Appliances, etc.<BR>
+                              Minimalistic app design<BR><BR> <b>Technologies Used:</b> Android - Java, Used my owned developed REST API of my E-Commerce Website, Retrofit, GSON, GSON Converter, OkHttp3</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="https://www.lisanichols.co.uk/wp-content/uploads/2017/04/Facebook-Messenger-Logo.jpeg" alt="Messenger">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Messenger</h5>
+                            <p class="card-text">A real time chat application with 1-1 chats, group chat, chat notifications, uploading images-documents-videos, full chat history, global search, sent-delivered-read status, block.<BR><BR>
+                                <b>Technologies Used:</b> Android-JAVA, Firebase authentication, Firebase Realtime Database, Firebase storage, MVVM Architecture, Databinding, Room Database, RxJava. </p>
+                        </div>
+                    </div>
+
                     <div class="card">
                         <div class="contain">             
                             <img class="card-img-top" src="https://lh3.googleusercontent.com/VfwliJyAEa6Bm2PiBrGjwYyYfKBV63RE5w0luOpDXmRpzG_HrKz4BtRGU7y8me_BP8g=w412-h220-rw" alt="Movie Finder">
@@ -80,17 +108,19 @@
                                 <b>Technologies Used:</b> Android – Kotlin, Modern Android Development Tools – Coroutines, Koin, Retrofit, GSON, GSON converter, OkHttp3, Glide, Material Components for Android, Android Architecture Components - LiveData, ViewModel, ViewBinding </p>
                         </div>
                     </div>
-
+                    
+                </div>
+                <div class="card-deck" >
                     <div class="card">
                         <div class="contain">
-                            <img class="card-img-top" src="https://miro.medium.com/max/1018/1*eUFJ5BNpw3xSZxK3BhVHxw.jpeg" alt="E-Commerce">
+                            <img class="card-img-top" src="https://www.tvisha.com/data/category_images/weather-app-development" alt="Movie Finder">
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
 
                         <div class="card-body">
-                            <h5 class="card-title font-weight-bold">E-Commerce</h5>
-                            <p class="card-text">Online store for Mobiles, Fashion (clothes/shoes), Electronics, Home Appliances, etc.<BR>
-                              Minimalistic app design<BR><BR> <b>Technologies Used:</b> Android - Java</p>
+                            <h5 class="card-title font-weight-bold">Weather App</h5>
+                            <p class="card-text">Know about current weather in any country and 5 day weather forecast  <BR><BR>
+                                <b>Technologies Used:</b> Android – Kotlin, OpenWeatherMap API </p>
                         </div>
                     </div>
 
@@ -109,49 +139,21 @@
                             <b>Technologies Used:</b> Flutter - Dart
                         </div>
                     </div>
-                    
-                </div>
-                <div class="card-deck" >
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="https://lh3.googleusercontent.com/VfwliJyAEa6Bm2PiBrGjwYyYfKBV63RE5w0luOpDXmRpzG_HrKz4BtRGU7y8me_BP8g=w412-h220-rw" alt="Movie Finder">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Weather App</h5>
-                            <p class="card-text">Know about current weather in any country and 5 day weather forecast  <BR><BR>
-                                <b>Technologies Used:</b> Android – Kotlin, OpenWeatherMap API </p>
-                        </div>
-                    </div>
-
-                    
 
                     <div class="card">
                         <div class="contain">
-                            <img class="card-img-top" src="https://www.selfprotectapp.com/wp-content/uploads/2018/01/homepage-1-min_medium.png" alt="Self Protect">
+                            <img class="card-img-top" src="https://bdmpublications.com/wp-content/uploads/2020/09/qrcodes.png" alt="Self Protect">
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
 
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Shop QR Scanner</h5>
-                            <p class="card-text"></p>
+                            <p class="card-text">A QR Scanner for billing of products & keeping all the records to provide an ease to the shopkeepers.</p>
 
                             <b>Technologies Used:</b> Android - Java, ZXing library
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="" alt="Messenger">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Messenger</h5>
-                            <p class="card-text"><BR>
-                                <b>Technologies Used:</b> Android-JAVA, Firebase Realtime Database </p>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="card-deck">
                     <div class="card">
@@ -169,7 +171,7 @@
 
                     <div class="card">
                         <div class="contain">
-                            <img class="card-img-top" src="img/GitExplorer.jpg" alt="KKW Alerts">
+                            <img class="card-img-top" src="https://www.mindinventory.com/blog/wp-content/uploads/2018/03/education-app.jpg" alt="KKW Alerts">
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
 
@@ -214,7 +216,7 @@
                         </div>
 
                         <div class="card-body">
-                          <h5 class="card-title font-weight-bold">SQLite with Room Persistence Library<img src="img/android_logo.png" style="width: 35px; "></h5>
+                          <h5 class="card-title font-weight-bold">A TODO List App<img src="img/android_logo.png" style="width: 35px; "></h5>
                           <p class="card-text"></p>
                             <b>Technologies Used: </b>Android - Java, Threading & AsyncTask, Data models, Room persistence library, SQLite database
                         </div>
@@ -321,7 +323,7 @@
                     </div>
                     <div class="card">
                         <div class="contain">
-                            <img class="card-img-top" src="https://github.com/KulkarniAtharva/GroceryUI-Android/blob/master/Screenshots/screenshot0.jpg" alt="Grocery App">
+                            <img class="card-img-top" src="https://github.com/KulkarniAtharva/GroceryUI-Android/blob/master/Screenshots/screenshot0.jpg?raw=true" alt="Grocery App">
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
                     </div>
@@ -343,7 +345,30 @@
                 <div class="card-deck">
                   <div class="card">
                         <div class="contain">
-                            <img class="card-img-top" src="https://miro.medium.com/max/1018/1*eUFJ5BNpw3xSZxK3BhVHxw.jpeg" alt="E-Commerce">
+                            <img class="card-img-top" src="https://miro.medium.com/max/1018/1*eUFJ5BNpw3xSZxK3BhVHxw.jpeg" alt="Tinder">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold">E-Commerce<img src="img/flutter_logo.png" style="width: 35px; "></h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="https://www.lisanichols.co.uk/wp-content/uploads/2017/04/Facebook-Messenger-Logo.jpeg" alt="Tinder">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold">Messenger<img src="img/flutter_logo.png" style="width: 35px; "></h5>
+                          <p class="card-text">
+
+                          A real time chat application with 1-1 chats, group chat, chat notifications, uploading images-documents-videos, full chat history, global search, sent-delivered-read status, block.<BR><BR>
+                                <b>Technologies Used:</b> Flutter-Dart, Firebase authentication, Firebase Realtime Database, Firebase storage, MVVM Architecture, Databinding, Room Database, RxJava.
+                             </P>
+                        </div>
+                    </div>
+                  <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="https://cdn.dribbble.com/users/1171520/screenshots/6540871/pokedex2.png" alt="PokeDex">
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
 
@@ -353,29 +378,7 @@
                         </div>
                   </div>
 
-                  <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/calculator_flutter.jpg" alt="Meme Generator">
-                            <button class="grow_skew_forward skew2" onclick="location.href='https://github.com/KulkarniAtharva/Calculator_Android_App'">View on Github</button>
-                        </div>
-
-                        <div class="card-body">
-                          <h5 class="card-title font-weight-bold">Meme Generator<img src="img/flutter_logo.png" style="width: 35px; "></h5>
-                            <b>Technologies Used:</b> Flutter - Dart
-                        </div>
-                  </div>
-
-                  <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/recipe.jpg" alt="Recipe App">
-                            <button class="grow_skew_forward skew2" onclick="location.href='https://github.com/KulkarniAtharva/Calculator_Android_App'">View on Github</button>
-                        </div>
-
-                        <div class="card-body">
-                          <h5 class="card-title font-weight-bold">Recipe App<img src="img/flutter_logo.png" style="width: 35px; "></h5>
-                            <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
-                        </div>
-                  </div>
+                  
                 </div>
                 <div class="card-deck">
                     <div class="card">
@@ -400,25 +403,7 @@
 
                 </div>
                 <div class="card-deck">
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="https://github.com/sudoosama/Meditation_Yoga_Flutter/blob/master/images/medityogaapp.JPG?raw=true" alt="Tinder">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title font-weight-bold">E-Commerce<img src="img/flutter_logo.png" style="width: 35px; "></h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="https://github.com/sudoosama/Meditation_Yoga_Flutter/blob/master/images/medityogaapp.JPG?raw=true" alt="Tinder">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title font-weight-bold">Messenger<img src="img/flutter_logo.png" style="width: 35px; "></h5>
-                            <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
-                        </div>
-                    </div>
+                    
                     <div class="card">
                         <div class="contain">
                             <img class="card-img-top" src="https://github.com/sudoosama/Meditation_Yoga_Flutter/blob/master/images/medityogaapp.JPG?raw=true" alt="Tinder">
@@ -429,6 +414,29 @@
                             <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/calculator_flutter.jpg" alt="Meme Generator">
+                            <button class="grow_skew_forward skew2" onclick="location.href='https://github.com/KulkarniAtharva/Calculator_Android_App'">View on Github</button>
+                        </div>
+
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold">Meme Generator<img src="img/flutter_logo.png" style="width: 35px; "></h5>
+                            <b>Technologies Used:</b> Flutter - Dart
+                        </div>
+                  </div>
+
+                  <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/recipe.jpg" alt="Recipe App">
+                            <button class="grow_skew_forward skew2" onclick="location.href='https://github.com/KulkarniAtharva/Calculator_Android_App'">View on Github</button>
+                        </div>
+
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold">Recipe App<img src="img/flutter_logo.png" style="width: 35px; "></h5>
+                            <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
+                        </div>
+                  </div>
                 </div>
 
                 <div class="card-deck">
@@ -447,8 +455,8 @@
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title font-weight-bold">Messenger</h5>
-                            <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
+                          <h5 class="card-title font-weight-bold">Flippable Box</h5>
+                            <b>Technologies Used:</b> Flutter - Dart
                         </div>
                     </div>
                     <div class="card">
@@ -457,12 +465,131 @@
                             <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title font-weight-bold">Meditation & Yoga</h5>
-                            <b>Technologies Used:</b> Flutter - Dart, Edamam API, http, webview, url launcher
-                        </div>
+                          <h5 class="card-title font-weight-bold"></h5>
+                            <b>Technologies Used:</b> Flutter - Dart
                     </div>
                 </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
 
+                        <div class="contain">
+                            <img class="card-img-top" src="img/healthcare.png" alt="Healthcare">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Healthcare - Alphamerc
+                    </div>
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Wallet - Alphamerc
+                    </div>
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/beautiful_header.jpg" alt="Beautiful Header">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Travel App
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/login_register.jpg" alt="Login Register">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Lamp Store
+                    </div>
+
+                </div>
+
+                <div class="card-deck">
+                    
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Fyro - Grocery Shopping App
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>News App - sachin Varma
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Fyro - Grocery Shopping App
+                    </div>
+
+                    
+                    
+
+                </div>
+
+                <div class="card-deck">
+                    
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Flutter News - indian app guy
+                    </div>
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/devfest.jpg" alt="Devfest">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Flutter Firebase Blog - indian app guy
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/doctor.png" alt="Doctor Booking">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Spin the bottle game - indian app guy
+                    </div>
+
+                </div>
+
+                <div class="card-deck">
+                    
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>30 minutes XD to Flutter - sudoosama 
+                    </div>
+
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/devfest.jpg" alt="Devfest">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Flippable Box
+                    </div>
+                    <div class="card">
+                        <div class="contain">
+                            <img class="card-img-top" src="img/home.png" alt="Home App">
+                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
+                        </div>
+                        <BR>Home App - Alphamerc
+                    </div>
+
+                </div>
 
               </div>
               <!----- Flutter END ----->
@@ -948,112 +1075,9 @@
 
                 </div>
 
-                <div class="card-deck">
-                    <div class="card">
+                
 
-                        <div class="contain">
-                            <img class="card-img-top" src="img/healthcare.png" alt="Healthcare">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Healthcare - Alphamerc
-                    </div>
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Wallet - Alphamerc
-                    </div>
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/beautiful_header.jpg" alt="Beautiful Header">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Travel App
-                    </div>
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/login_register.jpg" alt="Login Register">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Lamp Store
-                    </div>
-
-                </div>
-
-                <div class="card-deck">
-                    
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Fyro - Grocery Shopping App
-                    </div>
-
-                    
-                    
-
-                </div>
-
-                <div class="card-deck">
-                    
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Flutter News - indian app guy
-                    </div>
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/devfest.jpg" alt="Devfest">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Flutter Firebase Blog - indian app guy
-                    </div>
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/doctor.png" alt="Doctor Booking">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Spin the bottle game - indian app guy
-                    </div>
-
-                </div>
-
-                <div class="card-deck">
-                    
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/dating.jpg" alt="Wallet">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>30 minutes XD to Flutter - sudoosama 
-                    </div>
-
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/devfest.jpg" alt="Devfest">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Flippable Box
-                    </div>
-                    <div class="card">
-                        <div class="contain">
-                            <img class="card-img-top" src="img/home.png" alt="Home App">
-                            <button class="grow_skew_forward skew2" onclick="location.href=''">View on Github</button>
-                        </div>
-                        <BR>Home App - Alphamerc
-                    </div>
-
-                </div>
+                
 
               </div>
               <!----- Designing START ------>
@@ -1584,6 +1608,7 @@
           </div>
     </div>
   </div>
+
 </body>
 
 <!-- JavaScript Libraries -->
